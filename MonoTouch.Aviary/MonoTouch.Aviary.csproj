@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6C9E57A-521B-482D-8893-C92D726BB755}</ProjectGuid>
+    <ProjectTypeGuids>{F5B4F3BC-B597-4E2B-B552-EF5D8A32436F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MonoTouch.Aviary</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>MonoTouch.Aviary</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="AviarySDKResources.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="libAviarySDK.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="libAviarySDK.linkwith.cs">
+      <DependentUpon>libAviarySDK.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="AviarySDKResources.bundle\0xff000000.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff000000%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff001b8c.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff001b8c%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff0049ff.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff0049ff%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff007c53.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff007c53%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff008903.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff008903%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff00c3ff.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff00c3ff%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff486d7c.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff486d7c%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff545454.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff545454%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff65ce00.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff65ce00%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff693300.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff693300%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff7a6946.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff7a6946%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff8900a5.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xff8900a5%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffa8a8a8.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffa8a8a8%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffd30060.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffd30060%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffff0000.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffff0000%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffff5500.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffff5500%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffa300.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffa300%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffb8cb.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffb8cb%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffff00.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffff00%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffffff.png" />
+    <BundleResource Include="AviarySDKResources.bundle\0xffffffff%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\10-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\10-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\10.png" />
+    <BundleResource Include="AviarySDKResources.bundle\10%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\15-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\15-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\15.png" />
+    <BundleResource Include="AviarySDKResources.bundle\15%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\2-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\2-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\2.png" />
+    <BundleResource Include="AviarySDKResources.bundle\25-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\25-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\25.png" />
+    <BundleResource Include="AviarySDKResources.bundle\25%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\2%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\5-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\5-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\5.png" />
+    <BundleResource Include="AviarySDKResources.bundle\50-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\50-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\50.png" />
+    <BundleResource Include="AviarySDKResources.bundle\50%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\5%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\AFCustomizationDictionary.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\AFSDKViewController_iPad.nib" />
+    <BundleResource Include="AviarySDKResources.bundle\AFSDKViewController_iPad_landscape.nib" />
+    <BundleResource Include="AviarySDKResources.bundle\AFSDKViewController_iPhone_3_5_inch.nib" />
+    <BundleResource Include="AviarySDKResources.bundle\AFSDKViewController_iPhone_4_inch.nib" />
+    <BundleResource Include="AviarySDKResources.bundle\AviarySDKPlugins.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\Colors.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\Info.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\Status.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\about_backdrop.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_backdrop%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_blue_button.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_blue_button%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_blue_button_active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_blue_button_active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_grey_button.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_grey_button%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_grey_button_active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_grey_button_active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_logo.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_logo%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_shadow.png" />
+    <BundleResource Include="AviarySDKResources.bundle\about_shadow%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\activePill.png" />
+    <BundleResource Include="AviarySDKResources.bundle\activePill%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\apply-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\apply-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\apply.png" />
+    <BundleResource Include="AviarySDKResources.bundle\apply%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\backButton-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\backButton-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\backButton.png" />
+    <BundleResource Include="AviarySDKResources.bundle\backButton%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\blemish-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\blemish-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\blemish.png" />
+    <BundleResource Include="AviarySDKResources.bundle\blemish%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\bottom_nav_shadow.png" />
+    <BundleResource Include="AviarySDKResources.bundle\bottom_nav_shadow%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\brightness-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\brightness-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\brightness.png" />
+    <BundleResource Include="AviarySDKResources.bundle\brightness%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\cancel-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\cancel-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\cancel.png" />
+    <BundleResource Include="AviarySDKResources.bundle\cancel%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\canvas.png" />
+    <BundleResource Include="AviarySDKResources.bundle\canvas%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\centerSegmentedButton-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\centerSegmentedButton-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\centerSegmentedButton.png" />
+    <BundleResource Include="AviarySDKResources.bundle\centerSegmentedButton%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\close-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\close-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\close.png" />
+    <BundleResource Include="AviarySDKResources.bundle\close%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\closebutton.png" />
+    <BundleResource Include="AviarySDKResources.bundle\closebutton%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\colorfix-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\colorfix-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\colorfix.png" />
+    <BundleResource Include="AviarySDKResources.bundle\colorfix%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contentPackDivider.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contentPackDivider%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contentPackDividerShadow.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contentPackDividerShadow%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contrast-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contrast-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contrast.png" />
+    <BundleResource Include="AviarySDKResources.bundle\contrast%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground-adjacent.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground-adjacent%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackground%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf-adjacent.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf-adjacent%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf.png" />
+    <BundleResource Include="AviarySDKResources.bundle\conveyorBackgroundHalf%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\crop-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\crop-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\crop.png" />
+    <BundleResource Include="AviarySDKResources.bundle\crop%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\draw-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\draw-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\draw.png" />
+    <BundleResource Include="AviarySDKResources.bundle\draw%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_round-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_round-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_round.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_round%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_square-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_square-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_square.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effect_wrapper_square%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effects-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effects-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effects.png" />
+    <BundleResource Include="AviarySDKResources.bundle\effects%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\enhance-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\enhance-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\enhance.png" />
+    <BundleResource Include="AviarySDKResources.bundle\enhance%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\eraser-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\eraser-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\eraser.png" />
+    <BundleResource Include="AviarySDKResources.bundle\eraser%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedBackDivider.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedBackDivider%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedback-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedback-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedback.png" />
+    <BundleResource Include="AviarySDKResources.bundle\feedback%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_h-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_h-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_h.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_h%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_v-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_v-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_v.png" />
+    <BundleResource Include="AviarySDKResources.bundle\flip_v%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_linear-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_linear-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_linear.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_linear%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_radial-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_radial-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_radial.png" />
+    <BundleResource Include="AviarySDKResources.bundle\focus_radial%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\frame_thumbnail_default.png" />
+    <BundleResource Include="AviarySDKResources.bundle\frames-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\frames-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\frames.png" />
+    <BundleResource Include="AviarySDKResources.bundle\frames%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_effects.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_effects%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_frames.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_frames%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_stickers.png" />
+    <BundleResource Include="AviarySDKResources.bundle\get_more_stickers%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\glass_box-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\glass_box-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\glass_box.png" />
+    <BundleResource Include="AviarySDKResources.bundle\glass_box%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\hidef-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\hidef-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\hidef.png" />
+    <BundleResource Include="AviarySDKResources.bundle\hidef%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\homeBarBackground.png" />
+    <BundleResource Include="AviarySDKResources.bundle\homeBarBackground%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\illuminate-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\illuminate-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\illuminate.png" />
+    <BundleResource Include="AviarySDKResources.bundle\illuminate%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\invert-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\invert-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\invert.png" />
+    <BundleResource Include="AviarySDKResources.bundle\invert%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\leftSegmentedButton-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\leftSegmentedButton-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\leftSegmentedButton.png" />
+    <BundleResource Include="AviarySDKResources.bundle\leftSegmentedButton%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\list_arrow.png" />
+    <BundleResource Include="AviarySDKResources.bundle\list_arrow%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\meme-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\meme-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\meme.png" />
+    <BundleResource Include="AviarySDKResources.bundle\meme%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\memeField.png" />
+    <BundleResource Include="AviarySDKResources.bundle\memeField%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\minus.png" />
+    <BundleResource Include="AviarySDKResources.bundle\minus%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\navBar.png" />
+    <BundleResource Include="AviarySDKResources.bundle\navBar%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientation-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientation-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientation.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientation%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientationKnob.png" />
+    <BundleResource Include="AviarySDKResources.bundle\orientationKnob%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\pagination.png" />
+    <BundleResource Include="AviarySDKResources.bundle\pagination%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\pagination_active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\pagination_active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\plus.png" />
+    <BundleResource Include="AviarySDKResources.bundle\plus%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\plus_icon.png" />
+    <BundleResource Include="AviarySDKResources.bundle\plus_icon%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\poweredByAviary-Active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\poweredByAviary-Active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\poweredByAviary.png" />
+    <BundleResource Include="AviarySDKResources.bundle\poweredByAviary%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase_active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase_active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase_disabled.png" />
+    <BundleResource Include="AviarySDKResources.bundle\purchase_disabled%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\redeye-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\redeye-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\redeye.png" />
+    <BundleResource Include="AviarySDKResources.bundle\redeye%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\resizeKnob.png" />
+    <BundleResource Include="AviarySDKResources.bundle\resizeKnob%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\restore.png" />
+    <BundleResource Include="AviarySDKResources.bundle\restore%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\restore_active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\restore_active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rightSegmentedButton-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rightSegmentedButton-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rightSegmentedButton.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rightSegmentedButton%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_l-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_l-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_l.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_l%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_r-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_r-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_r.png" />
+    <BundleResource Include="AviarySDKResources.bundle\rotate_r%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\saturation-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\saturation-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\saturation.png" />
+    <BundleResource Include="AviarySDKResources.bundle\saturation%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\selectionViewBackground.png" />
+    <BundleResource Include="AviarySDKResources.bundle\selectionViewBackground%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\selectionViewShelfBackground.png" />
+    <BundleResource Include="AviarySDKResources.bundle\selectionViewShelfBackground%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sharpness-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sharpness-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sharpness.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sharpness%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\singleConveyorCenterOverlay.png" />
+    <BundleResource Include="AviarySDKResources.bundle\singleConveyorCenterOverlay%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\singleConveyorStretchableOverlay.png" />
+    <BundleResource Include="AviarySDKResources.bundle\singleConveyorStretchableOverlay%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderCenter.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderCenter%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderKnob.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderKnob%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCap.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCap%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCore-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCore-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCore.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderLeftCore%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCap.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCap%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCore-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCore-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCore.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderRightCore%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderStretchableImage.png" />
+    <BundleResource Include="AviarySDKResources.bundle\sliderStretchableImage%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\smallKnob.png" />
+    <BundleResource Include="AviarySDKResources.bundle\smallKnob%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\splitConveyorCenterOverlay.png" />
+    <BundleResource Include="AviarySDKResources.bundle\splitConveyorCenterOverlay%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\splitConveyorStretchableOverlay.png" />
+    <BundleResource Include="AviarySDKResources.bundle\splitConveyorStretchableOverlay%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\stickers-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\stickers-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\stickers.png" />
+    <BundleResource Include="AviarySDKResources.bundle\stickers%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\text-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\text-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\text.png" />
+    <BundleResource Include="AviarySDKResources.bundle\text%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolBar.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolBar%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell-adjacent.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell-adjacent%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell-selected.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell-selected%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell.png" />
+    <BundleResource Include="AviarySDKResources.bundle\toolSelectionCell%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\top_nav_shadow.png" />
+    <BundleResource Include="AviarySDKResources.bundle\top_nav_shadow%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\warmth-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\warmth-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\warmth.png" />
+    <BundleResource Include="AviarySDKResources.bundle\warmth%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\whiten-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\whiten-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\whiten.png" />
+    <BundleResource Include="AviarySDKResources.bundle\whiten%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\zoom-active.png" />
+    <BundleResource Include="AviarySDKResources.bundle\zoom-active%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\zoom.png" />
+    <BundleResource Include="AviarySDKResources.bundle\zoom%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\AviaryContentPacks.momd\VersionInfo.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\AviaryTranslations.momd\VersionInfo.plist" />
+    <BundleResource Include="AviarySDKResources.bundle\bg.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\ca.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.effectpack.04\iap_preview.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.effectpack.04\iap_preview%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.effectpack.06\iap_preview.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.effectpack.06\iap_preview%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border10_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border11_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border12_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border1_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border2_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border3_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border4_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border5_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border6_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border7_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border8_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\border9_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\iap_preview.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.framepack.00\iap_preview%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\3d_glasses_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\arrow_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\aviators_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\blue_arrow_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\blue_bubble_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\bowtie_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\cigar_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\crown_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\decal_preview.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\decal_preview%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\disguise_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\double_arrow_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\eyepatch_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\fez_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\green_bubble_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\green_circle_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\heart_original_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\helicopter_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\hipster_glasses_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\iap_preview.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\iap_preview%402x.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\orange_bubble_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\orange_square_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\pink_bubble_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\pipe_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\red_arrow_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\sombrero_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\star_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\com.aviary.stickerpack.00\tie_thumbnail.png" />
+    <BundleResource Include="AviarySDKResources.bundle\cs.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\de.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\en.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\es.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\fr.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\he.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\id.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\it.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\ja.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\ko.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\lt.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\lv.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\nl.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\pl.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\pt-BR.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\pt.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\ru.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\vi.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\zh-Hans.lproj\Localizable.strings" />
+    <BundleResource Include="AviarySDKResources.bundle\zh-Hant.lproj\Localizable.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AviarySDKResources.bundle\AviaryContentPackCompiledDatabase.sqlite" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPackPurchaseInfo.mom" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPackV1ToPurchaseInfo.cdm" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPackV2ToPurchaseInfo.cdm" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPackV3ToPurchaseInfo.cdm" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPacksDataModel.mom" />
+    <None Include="AviarySDKResources.bundle\Impact.ttf" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPacks.momd\AviaryContentPacks 1.mom" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPacks.momd\AviaryContentPacks 2.mom" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPacks.momd\AviaryContentPacks 3.mom" />
+    <None Include="AviarySDKResources.bundle\AviaryContentPacks.momd\AviaryContentPacks 3.omo" />
+    <None Include="AviarySDKResources.bundle\AviaryTranslations.momd\AviaryTranslations.mom" />
+  </ItemGroup>
+</Project>

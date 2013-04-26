@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTouch.Aviary", "MonoTouch.Aviary\MonoTouch.Aviary.csproj", "{B6C9E57A-521B-482D-8893-C92D726BB755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoTouch.Aviary.Demo", "MonoTouch.Aviary.Demo\MonoTouch.Aviary.Demo.csproj", "{2EA435DE-189A-4801-9F18-6298E118CA8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|iPhone.Build.0 = Release|iPhone
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2EA435DE-189A-4801-9F18-6298E118CA8C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|iPhone.Build.0 = Release|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B6C9E57A-521B-482D-8893-C92D726BB755}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MonoTouch.Aviary.Demo\MonoTouch.Aviary.Demo.csproj
+	EndGlobalSection
+EndGlobal

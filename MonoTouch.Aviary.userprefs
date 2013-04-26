@@ -1,0 +1,48 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoTouch.Aviary.Demo/TestViewController.cs">
+    <Files>
+      <File FileName="MonoTouch.Aviary.Demo/AppDelegate.cs" Line="37" Column="3" />
+      <File FileName="MonoTouch.Aviary/libAviarySDK.linkwith.cs" Line="1" Column="1" />
+      <File FileName="MonoTouch.Aviary/ApiDefinition.cs" Line="151" Column="32" />
+      <File FileName="MonoTouch.Aviary.Demo/Info.plist" />
+      <File FileName="MonoTouch.Aviary.Demo/Settings.bundle/Root.plist" />
+      <File FileName="MonoTouch.Aviary.Demo/TestViewController.cs" Line="36" Column="1" />
+      <File FileName="MonoTouch.Aviary.Demo/TestViewController.designer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="MonoTouch.Aviary" expanded="True" />
+          <Node name="MonoTouch.Aviary.Demo" expanded="True" selected="True">
+            <Node name="TestViewController.cs" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Paul/Git/MedXChange.iOS/SubModules/MonoTouch.Aviary/MonoTouch.Aviary.Demo/TestViewController.cs" line="51" column="1" />
+      <Breakpoint file="/Users/Paul/Git/MedXChange.iOS/SubModules/MonoTouch.Aviary/MonoTouch.Aviary.Demo/TestViewController.cs" line="56" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../Noodle/Source/Noodle/TinyIoC.cs" line="3710" offsetX="567" offsetY="55635" expression="constructor" liveUpdate="False" />
+    <Watch file="../../Noodle/Source/Noodle/TinyIoC.cs" line="3712" offsetX="856" offsetY="55665" expression="newExpression" liveUpdate="False" />
+    <Watch file="../../Noodle/Source/Noodle/TinyIoC.cs" line="3653" offsetX="775" offsetY="54722" expression="currentParam.Name" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/ConnectToDeviceController.cs" line="78" offsetX="755" offsetY="1155" expression="ForgetButton.Frame" liveUpdate="False" />
+    <Watch file="../../MedXChange.Library/Src/MedXChange.Client/ClientBase.cs" line="131" offsetX="606" offsetY="1876" expression="response.Content" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/CaseEntryController.cs" line="63" offsetX="567" offsetY="930" expression="_model.EditableFields" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/CaseEntryController.cs" line="48" offsetX="567" offsetY="705" expression="_model.EditableFields" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/CaseEntryController.cs" line="120" offsetX="582" offsetY="1785" expression="field" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/WorklistController.cs" line="59" offsetX="401" offsetY="870" expression="_caseEntryViewModel" liveUpdate="False" />
+    <Watch file="../../../Src/MedXChange.iOS/Controllers/WorklistController.cs" line="59" offsetX="670" offsetY="757" expression="_caseEntryViewModel._editableFields.Count" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

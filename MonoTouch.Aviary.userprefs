@@ -1,19 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MonoTouch.Aviary.Demo/TestViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.5.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MonoTouch.Aviary/libAviarySDK.linkwith.cs">
     <Files>
-      <File FileName="MonoTouch.Aviary.Demo/AppDelegate.cs" Line="37" Column="3" />
-      <File FileName="MonoTouch.Aviary/libAviarySDK.linkwith.cs" Line="1" Column="1" />
-      <File FileName="MonoTouch.Aviary/ApiDefinition.cs" Line="151" Column="32" />
+      <File FileName="MonoTouch.Aviary.Demo/AppDelegate.cs" Line="30" Column="4" />
+      <File FileName="MonoTouch.Aviary/libAviarySDK.linkwith.cs" Line="7" Column="35" />
+      <File FileName="MonoTouch.Aviary/ApiDefinition.cs" Line="217" Column="20" />
       <File FileName="MonoTouch.Aviary.Demo/Info.plist" />
       <File FileName="MonoTouch.Aviary.Demo/Settings.bundle/Root.plist" />
-      <File FileName="MonoTouch.Aviary.Demo/TestViewController.cs" Line="36" Column="1" />
+      <File FileName="MonoTouch.Aviary.Demo/TestViewController.cs" Line="36" Column="63" />
       <File FileName="MonoTouch.Aviary.Demo/TestViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="MonoTouch.Aviary/libAviarySDK.a" Line="1" Column="1" />
+      <File FileName="MonoTouch.Aviary.Demo/Main.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="MonoTouch.Aviary" expanded="True" />
+          <Node name="MonoTouch.Aviary" expanded="True">
+            <Node name="libAviarySDK.a" expanded="True" />
+          </Node>
           <Node name="MonoTouch.Aviary.Demo" expanded="True" selected="True">
             <Node name="TestViewController.cs" expanded="True" />
           </Node>

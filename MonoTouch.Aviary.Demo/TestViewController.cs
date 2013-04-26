@@ -32,7 +32,7 @@ namespace MonoTouch.Aviary.Demo
 			var testImage = UIImage.FromFile("colorbars.gif");
 			photoEditor = new AFPhotoEditorController(testImage);
 			var afDelegate = new AFDelegate(this);
-			//photoEditor.Delegate = afDelegate;
+			photoEditor.Delegate = afDelegate;
 			PresentViewController(photoEditor, true, new NSAction(() => {}));
 		}
 	}

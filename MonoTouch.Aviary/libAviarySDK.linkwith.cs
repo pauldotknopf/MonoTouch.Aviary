@@ -1,4 +1,12 @@
 using System;
 using MonoTouch.ObjCRuntime;
 
-[assembly: LinkWith ("libAviarySDK.a", LinkTarget = LinkTarget.ArmV6 | LinkTarget.ArmV7 | LinkTarget.Simulator, ForceLoad = true, IsCxx = true, Frameworks="CoreGraphics QuartzCore Accelerate StoreKit CoreData", LinkerFlags="-ObjC -all_load -fobjc-arc -lz -lsqlite3.0")]
+[assembly: LinkWith ("libAviarySDK.a", 
+                     LinkTarget = LinkTarget.ArmV7 | LinkTarget.Simulator, 
+                     ForceLoad = true, 
+                     IsCxx = true,
+                     Frameworks="Accelerate CoreData CoreText Foundation MessageUI OpenGLES QuartzCore StoreKit SystemConfiguration UIKit", 
+                     WeakFrameworks="AdSupport",
+                     LinkerFlags="-ObjC -all_load -fobjc-arc -lz -lsqlite3.0")]
+//CoreGraphics QuartzCore Accelerate StoreKit CoreData
+// Accelerate AdSupport CoreData CoreText Foundation MessageUI OpenGLES QuartzCore StoreKit SystemConfiguration UIKit

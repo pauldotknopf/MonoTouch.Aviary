@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-       <key>Aviary-API-Key</key>
-       <string>UxhfwZABZEa12DXDmTluHA</string>
+	<key>Aviary-API-Key</key>
+	<string>UxhfwZABZEa12DXDmTluHA</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -23,6 +23,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>3.2</string>
+	<string>5.0</string>
 </dict>
 </plist>

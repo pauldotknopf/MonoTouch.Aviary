@@ -49,10 +49,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
   <ItemGroup>
     <ObjcBindingNativeLibrary Include="libAviarySDK.a" />
+    <ObjcBindingNativeLibrary Include="libarclite.a" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="libAviarySDK.linkwith.cs">
       <DependentUpon>libAviarySDK.a</DependentUpon>
+    </Compile>
+    <Compile Include="libarclite.linkwith.cs">
+      <DependentUpon>libarclite.a</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
